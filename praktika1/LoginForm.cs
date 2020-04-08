@@ -16,7 +16,6 @@ namespace praktika1
         {
             InitializeComponent();
         }
-
         
 
         private void button1_Click(object sender, EventArgs e)
@@ -26,12 +25,20 @@ namespace praktika1
             pass = HashFunc.CalculateMD5Hash(pass);
             if (userExists(login, pass))
             {
-                MessageBox.Show("You logged in!");
+                Form1 mainForm = new Form1(login);
+                mainForm.Show();
+                mainForm.FormClosing += new FormClosingEventHandler(mainForm_closing);
+                (this).Hide();
             }
             else
             {
                 MessageBox.Show("User does not exist!");
             }
+        }
+
+        private void mainForm_closing(object sender, FormClosingEventArgs e)
+        {
+            Close();
         }
 
         private bool userExists(string login, string pass)
