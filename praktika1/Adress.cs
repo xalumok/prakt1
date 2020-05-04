@@ -26,7 +26,7 @@ namespace praktika1
             floorNum = _floorNum;
             roomNum = _roomNum;
             if (string.IsNullOrWhiteSpace(surname) || string.IsNullOrWhiteSpace(streetName) || string.IsNullOrWhiteSpace(buildingNum) || string.IsNullOrWhiteSpace(floorNum) || string.IsNullOrWhiteSpace(roomNum))
-                throw new ValidationException("Slavik");
+                throw new ValidationException("Slavik sees bad data in da hood");
         }
     }
 }

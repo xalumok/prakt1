@@ -115,5 +115,10 @@ namespace praktika1
             catch (Exception ex)
             { MessageBox.Show("Invalid data"); }
         }
+
+        private void buttonLogOut_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

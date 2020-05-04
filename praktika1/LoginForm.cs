@@ -16,15 +16,26 @@ namespace praktika1
         {
             InitializeComponent();
         }
-        
 
         private void button1_Click(object sender, EventArgs e)
         {
             string login = textBoxLogin.Text;
             string pass = textBoxPass.Text;
             pass = HashFunc.CalculateMD5Hash(pass);
-            if (userExists(login, pass))
+            if (userExists(login, pass) && userIsAdmin(login))
             {
+                AdminForm mainForm = new AdminForm();
+                mainForm.Show();
+                mainForm.FormClosing += new FormClosingEventHandler(mainForm_closing);
+                (this).Hide();
+            }
+            else if (userExists(login, pass))
+            {
+                if (userIsBanned(login))
+                {
+                    MessageBox.Show("This user is banned!");
+                    return;
+                }
                 Form1 mainForm = new Form1(login);
                 mainForm.Show();
                 mainForm.FormClosing += new FormClosingEventHandler(mainForm_closing);
@@ -38,12 +49,26 @@ namespace praktika1
 
         private void mainForm_closing(object sender, FormClosingEventArgs e)
         {
-            Close();
+            this.Show();
         }
 
         private bool userExists(string login, string pass)
         {
             string query = $"SELECT login FROM users where login='{login}' and pass='{pass}'";
+            DataTable DT = DBFunc.sendRequest(query);
+            return (DT.Rows.Count != 0);
+        }
+
+        private bool userIsBanned(string login)
+        {
+            string query = $"SELECT login FROM ban where login='{login}'";
+            DataTable DT = DBFunc.sendRequest(query);
+            return (DT.Rows.Count != 0);
+        }
+
+        private bool userIsAdmin(string login)
+        {
+            string query = $"SELECT login FROM admins where login='{login}'";
             DataTable DT = DBFunc.sendRequest(query);
             return (DT.Rows.Count != 0);
         }

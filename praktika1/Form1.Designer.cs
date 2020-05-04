@@ -45,6 +45,7 @@
             this.buttonAdd = new System.Windows.Forms.Button();
             this.buttonEdit = new System.Windows.Forms.Button();
             this.buttonDelete = new System.Windows.Forms.Button();
+            this.buttonLogOut = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -91,23 +92,25 @@
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(911, 353);
+            this.dataGridView1.Size = new System.Drawing.Size(908, 371);
             this.dataGridView1.TabIndex = 4;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // textBoxSurname
             // 
+            this.textBoxSurname.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.textBoxSurname.Font = new System.Drawing.Font("Montserrat Alternates", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxSurname.Location = new System.Drawing.Point(17, 403);
+            this.textBoxSurname.Location = new System.Drawing.Point(18, 420);
             this.textBoxSurname.Name = "textBoxSurname";
             this.textBoxSurname.Size = new System.Drawing.Size(176, 28);
             this.textBoxSurname.TabIndex = 7;
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Montserrat Alternates", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(58, 374);
+            this.label1.Location = new System.Drawing.Point(59, 391);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(92, 26);
             this.label1.TabIndex = 6;
@@ -115,17 +118,19 @@
             // 
             // textBoxStreetNsme
             // 
+            this.textBoxStreetNsme.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.textBoxStreetNsme.Font = new System.Drawing.Font("Montserrat Alternates", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxStreetNsme.Location = new System.Drawing.Point(199, 403);
+            this.textBoxStreetNsme.Location = new System.Drawing.Point(200, 420);
             this.textBoxStreetNsme.Name = "textBoxStreetNsme";
             this.textBoxStreetNsme.Size = new System.Drawing.Size(176, 28);
             this.textBoxStreetNsme.TabIndex = 9;
             // 
             // label2
             // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Montserrat Alternates", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(228, 374);
+            this.label2.Location = new System.Drawing.Point(229, 391);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(120, 26);
             this.label2.TabIndex = 8;
@@ -133,17 +138,19 @@
             // 
             // textBoxBuildingNum
             // 
+            this.textBoxBuildingNum.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.textBoxBuildingNum.Font = new System.Drawing.Font("Montserrat Alternates", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxBuildingNum.Location = new System.Drawing.Point(381, 403);
+            this.textBoxBuildingNum.Location = new System.Drawing.Point(382, 420);
             this.textBoxBuildingNum.Name = "textBoxBuildingNum";
             this.textBoxBuildingNum.Size = new System.Drawing.Size(176, 28);
             this.textBoxBuildingNum.TabIndex = 11;
             // 
             // label3
             // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Montserrat Alternates", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(389, 374);
+            this.label3.Location = new System.Drawing.Point(390, 391);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(159, 26);
             this.label3.TabIndex = 10;
@@ -151,17 +158,19 @@
             // 
             // textBoxfloorNum
             // 
+            this.textBoxfloorNum.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.textBoxfloorNum.Font = new System.Drawing.Font("Montserrat Alternates", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxfloorNum.Location = new System.Drawing.Point(563, 403);
+            this.textBoxfloorNum.Location = new System.Drawing.Point(564, 420);
             this.textBoxfloorNum.Name = "textBoxfloorNum";
             this.textBoxfloorNum.Size = new System.Drawing.Size(176, 28);
             this.textBoxfloorNum.TabIndex = 13;
             // 
             // label4
             // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Montserrat Alternates", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(584, 374);
+            this.label4.Location = new System.Drawing.Point(585, 391);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(131, 26);
             this.label4.TabIndex = 12;
@@ -169,17 +178,19 @@
             // 
             // textBoxRoomNumber
             // 
+            this.textBoxRoomNumber.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.textBoxRoomNumber.Font = new System.Drawing.Font("Montserrat Alternates", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxRoomNumber.Location = new System.Drawing.Point(745, 403);
+            this.textBoxRoomNumber.Location = new System.Drawing.Point(746, 420);
             this.textBoxRoomNumber.Name = "textBoxRoomNumber";
             this.textBoxRoomNumber.Size = new System.Drawing.Size(176, 28);
             this.textBoxRoomNumber.TabIndex = 15;
             // 
             // label5
             // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Montserrat Alternates", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(766, 374);
+            this.label5.Location = new System.Drawing.Point(767, 391);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(138, 26);
             this.label5.TabIndex = 14;
@@ -187,8 +198,9 @@
             // 
             // buttonAdd
             // 
+            this.buttonAdd.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.buttonAdd.Font = new System.Drawing.Font("Montserrat Alternates", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonAdd.Location = new System.Drawing.Point(17, 447);
+            this.buttonAdd.Location = new System.Drawing.Point(18, 464);
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.Size = new System.Drawing.Size(176, 57);
             this.buttonAdd.TabIndex = 16;
@@ -198,8 +210,9 @@
             // 
             // buttonEdit
             // 
+            this.buttonEdit.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.buttonEdit.Font = new System.Drawing.Font("Montserrat Alternates", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonEdit.Location = new System.Drawing.Point(199, 447);
+            this.buttonEdit.Location = new System.Drawing.Point(200, 464);
             this.buttonEdit.Name = "buttonEdit";
             this.buttonEdit.Size = new System.Drawing.Size(176, 57);
             this.buttonEdit.TabIndex = 17;
@@ -209,8 +222,9 @@
             // 
             // buttonDelete
             // 
+            this.buttonDelete.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.buttonDelete.Font = new System.Drawing.Font("Montserrat Alternates", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonDelete.Location = new System.Drawing.Point(745, 447);
+            this.buttonDelete.Location = new System.Drawing.Point(746, 464);
             this.buttonDelete.Name = "buttonDelete";
             this.buttonDelete.Size = new System.Drawing.Size(176, 57);
             this.buttonDelete.TabIndex = 18;
@@ -218,11 +232,25 @@
             this.buttonDelete.UseVisualStyleBackColor = true;
             this.buttonDelete.Click += new System.EventHandler(this.buttonDelete_Click);
             // 
+            // buttonLogOut
+            // 
+            this.buttonLogOut.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.buttonLogOut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.buttonLogOut.Font = new System.Drawing.Font("Montserrat Alternates", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonLogOut.Location = new System.Drawing.Point(746, 527);
+            this.buttonLogOut.Name = "buttonLogOut";
+            this.buttonLogOut.Size = new System.Drawing.Size(176, 57);
+            this.buttonLogOut.TabIndex = 19;
+            this.buttonLogOut.Text = "Log out";
+            this.buttonLogOut.UseVisualStyleBackColor = false;
+            this.buttonLogOut.Click += new System.EventHandler(this.buttonLogOut_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(935, 516);
+            this.ClientSize = new System.Drawing.Size(932, 595);
+            this.Controls.Add(this.buttonLogOut);
             this.Controls.Add(this.buttonDelete);
             this.Controls.Add(this.buttonEdit);
             this.Controls.Add(this.buttonAdd);
@@ -262,6 +290,7 @@
         private System.Windows.Forms.Button buttonAdd;
         private System.Windows.Forms.Button buttonEdit;
         private System.Windows.Forms.Button buttonDelete;
+        private System.Windows.Forms.Button buttonLogOut;
     }
 }
 
